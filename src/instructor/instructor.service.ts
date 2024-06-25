@@ -2,7 +2,7 @@ import { Injectable } from '@nestjs/common';
 import { InjectModel } from '@nestjs/mongoose';
 import { Model } from 'mongoose';
 import { Instructor, InstructorDocument } from 'src/schema/instructor.schema';
-import { InstructorDTO } from './instructor.dto';
+import { InstructorDTO } from 'src/instructor/instructor.dto';
 
 @Injectable()
 export class InstructorService {

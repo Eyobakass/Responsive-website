@@ -1,6 +1,6 @@
 import { Controller, Get } from '@nestjs/common';
 import { InstructorService } from './instructor.service';
-import { InstructorDTO } from './instructor.dto';
+import { InstructorDTO } from 'src/instructor/instructor.dto';
 
 @Controller('instructors')
 export class InstructorController {

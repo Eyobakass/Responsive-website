@@ -2,7 +2,7 @@ import { Injectable } from '@nestjs/common';
 import { InjectModel } from '@nestjs/mongoose';
 import { Model } from 'mongoose';
 import { Student, StudentDocument } from './student.schema';
-import { StudentDTO } from './student.dto';
+import { StudentDTO } from 'src/student/student.dto';
 
 @Injectable()
 export class StudentService {

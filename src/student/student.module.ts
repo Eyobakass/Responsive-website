@@ -3,7 +3,7 @@ import { StudentController } from './student.controller';
 import { StudentService } from './student.service';
 import { MongooseModule } from '@nestjs/mongoose';
 import { StudentModel, StudentSchema } from './student.schema';
-import { StudentDTO } from './student.dto';
+import { StudentDTO } from 'src/student/student.dto';
 
 @Module({
   imports: [

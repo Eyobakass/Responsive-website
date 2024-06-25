@@ -2,8 +2,8 @@ import { Module } from '@nestjs/common';
 import { InstructorController } from './instructor.controller';
 import { InstructorService } from './instructor.service';
 import { MongooseModule } from '@nestjs/mongoose';
-import { InstructorSchema } from './instructor.schema';
-import { InstructorDTO } from './instructor.dto';
+import { InstructorSchema } from 'src/schema/instructor.schema';
+import { InstructorDTO } from 'src/instructor/instructor.dto';
 
 @Module({
   imports: [
