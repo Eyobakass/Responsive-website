@@ -1,9 +1,8 @@
 import { Module } from '@nestjs/common';
+import { MongooseModule } from '@nestjs/mongoose';
 import { StudentController } from './student.controller';
 import { StudentService } from './student.service';
-import { MongooseModule } from '@nestjs/mongoose';
-import { StudentModel, StudentSchema } from './student.schema';
-import { StudentDTO } from 'src/student/student.dto';
+import { StudentSchema } from './student.model';
 
 @Module({
   imports: [

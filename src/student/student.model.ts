@@ -41,4 +41,6 @@ export interface Student extends mongoose.Document {
   ratedProjects: mongoose.Types.ObjectId[];
 }
 
-export const StudentModel = mongoose.model<Student>('Student', StudentSchema);
+export interface StudentDocument extends Student, mongoose.Document {}
+
+export const StudentModel = mongoose.model<StudentDocument>('Student', StudentSchema);

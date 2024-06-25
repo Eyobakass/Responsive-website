@@ -10,7 +10,7 @@ const RatedProjectSchema = new Schema({
     enum: [1, 2, 3, 4, 5],
   },
   category: {
-    type: String,
+    type: String, 
     required: true,
     enum: ['beginner', 'intermediate', 'advanced'],
   },
@@ -25,7 +25,7 @@ const InstructorSchema = new Schema({
   isGivingCourse: { type: Boolean, required: true },
 });
 
-// Create an interface for the Instructor document
+// Create an interface for the RatedProject subdocument
 export interface RatedProject {
   studentName: string;
   projectName: string;
@@ -33,6 +33,7 @@ export interface RatedProject {
   category: 'beginner' | 'intermediate' | 'advanced';
 }
 
+// Create an interface for the Instructor document
 export interface Instructor extends Document {
   firstName: string;
   lastName: string;
@@ -41,4 +42,6 @@ export interface Instructor extends Document {
   isGivingCourse: boolean;
 }
 
-export const InstructorModel = model<Instructor>('Instructor', InstructorSchema);
+export interface InstructorDocument extends Instructor, Document {}
+
+export const InstructorModel = model<InstructorDocument>('Instructor', InstructorSchema);
