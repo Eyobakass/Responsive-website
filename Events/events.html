@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+    <link rel="stylesheet" href="events.css">
+    <script>
+        function hamBurger(){
+        const hamburger = document.querySelector('.hamburger')
+        hamburger.style.display = 'flex'
+        }
+        function hideHam(){
+          const hideHam = document.querySelector('.hamburger')
+         hideHam.style.display = 'none'
+        }
+        </script>
+</head>
+<body>
+    <header class="header">
+        <nav class="hamburger">
+            <ul class="hamburger-menu">
+              <li onclick=hideHam() ><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                <li class="ham-item">
+                    <a href="../Home/Home.html" class="ham-link">Home</a>
+                </li>
+                <li class="ham-item">
+                    <a href="../About US/About Us.html" class="ham-link">About Us</a>
+                </li>
+                <li class="ham-item">
+                    <a href="../Events/events.html" class="ham-link">Events</a>
+                <li class="ham-item">
+                    <a href="../Project/Projects.html" class="ham-link">Projects</a>
+                </li>
+               
+                <li class="ham-item">
+                    <a href="../contact-us/contact.html" class="ham-link">Contact us</a>
+                </li>
+                 <li class="ham-item">
+                    <a href="../Training/training.html" class="ham-link">Trainings</a></li>
+                    <li class="ham-item">
+                        <a class="ham-link" href="../chat-room/Chat-room-login.html" for="btnControl">ChatRoom</a>
+                        <div class="dropdown-content">
+                            <a href="../chat-room/main-room.html">Project Pal</a>
+                            <a href="../chat-room/main-room.html">Training</a>
+                        </div>
+                      </li>
+                      <li class="ham-item">
+                        <a href="../Join Us/Join Us.html" class="ham-link">Join us</a>
+                    </li>
+            </ul>
+        </nav>
+        <nav class="navbar">
+            <img src="../image/logo2.png" alt="logo">
+            <ul class="nav-menu">
+              <li class="nav-item">
+                  <a href="../Home/Home.html" class="nav-link">Home</a>
+              </li>
+              <li class="nav-item">
+                  <a href="../About US/About Us.html" class="nav-link">About Us</a>
+              </li>
+              <li class="nav-item">
+                  <a href="../Events/events.html" class="nav-link">Events</a>
+              <li class="nav-item">
+                  <a href="../Project/Projects.html" class="nav-link">Projects</a>
+              </li>
+             
+              <li class="nav-item">
+                  <a href="../contact-us/contact.html" class="nav-link">Contact us</a>
+              </li>
+               <li class="nav-item">
+                  <a href="../Training/training.html" class="nav-link">Trainings</a></li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="../chat-room/Chat-room-login.html" for="btnControl">ChatRoom</a>
+                      <div class="dropdown-content">
+                        <a href="../chat-room/Chat-room-login.html">Project Pal</a>
+                        <a href="../chat-room/Chat-room-login.html">Training</a>
+                      </div>
+                    </li>
+              <li><a  href="../Join Us/Join Us.html"><button class="secondary-btn">Join Us</button></a></li>
+              <li onclick= hamBurger() class="side" ><a href=""><svg fill="white" stroke="white" xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="60px" fill="#5f6368"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+          </ul>
+          
+        </nav>
+    </header>
+<!--Hero section-->
+    <section class="hero">
+            <div class="content">
+              <h1>Events</h1>
+              <p>Dont't miss out on any of our cool events!</p>
+            </div>
+        
+      </section>
+    <div class="Wrapper">
+        <h1>Upcoming Events</h1>
+    <div class="second-container">
+        <img src="../image/computer-code.jpg" alt="Code">
+        <div class="card-content">
+            <h1>Competetive programming  </h1>
+            <p>Get ready for a compettetive college programming <br>competetion where students from multiple universities<br> will battle itt out with their coding skill!!</p><br>
+            <p>Registration day will  be announced soon!!!</p> <br>
+            <p>March 20-21<br>10:00AM-2:00AM</p>        
+    </div>
+   </div>
+
+   <div class="second-container">
+    <img src="../image/face-detection.jpg" alt="face-detection">
+    <div class="card-content">
+        <h1>Guest Speaker</h1>
+        <p>Learn More about the role of AI in Ethiopia from Ashenafi Tadese.<br> He is a chief enginner at Ethiopian AI Institute </p><br>
+        <p>The talk will be held at AAiT Hall</p> <br>
+        <p>April 9<br>10:00AM-2:00AM</p>        
+</div>
+</div>
+
+<div class="second-container">
+    <img src="../image/face-detection.jpg" alt="face-detection">
+    <div class="card-content">
+        <h1>Club Discussion</h1>
+        <p>We will be discussing the current state of the club and future plans. </p><br>
+        <p>NB-107</p> <br>
+        <p>April 28<br>10:00AM-2:00AM</p>        
+</div>
+</div>
+</div>
+
+<section class="CTA">
+  <div class="CTA-2"> 
+    <h1>Projects</h1>
+    <p>If you would like to see our impressive collection of student project visit<br> 
+      our projects page</p>
+  </div>
+  <div class="CTA-1">
+    <a href="../Project/Projects.html">
+    <button class="CTA-btn">Projects</button></a>
+  </div>
+</section>
+<footer class="footer-last">
+    
+    <div class="footer-left">
+  
+      <h3>Byte<span>Minds</span></h3>
+      <img src="../image/Byte Minds.png" alt="logo">
+  
+      <p class="footer-links">
+        <a href="../Home/Home.html" class="link-1">Home</a>
+        
+        <a href="../About US/About Us.html">About Us</a>
+      
+        <br>
+      
+        <a href="../contact-us/contact.html">Contact Us</a>
+        <a href="../">Events</a>
+      </p>
+      <p class="footer-club-name">Byte-Minds <div>&#169</div> 2024</p>
+      <hr class="line">
+    </div>
+  
+    <div class="footer-center">
+  
+      <div>
+        
+        <p>Contact Us</p>
+      </div>
+  <br>
+      <div>
+        
+        <p>+251905050505</p>
+      </div>
+  <br>
+      <div>
+       
+        <p><a href="Byte-minds@gmail.com">Byte-minds@gmail.com</a></p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

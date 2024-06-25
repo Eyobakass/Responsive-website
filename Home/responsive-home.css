@@ -1,0 +1,117 @@
+/*hamburger*/
+.side{
+    display: none;
+  }
+  .hamburger {
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      padding: 1.5rem 1.5rem;
+      position: fixed;
+      top: 0;
+      right: 0;
+      
+      height: 100vh;
+      width: 250px;
+      z-index: 999;
+    background-color: white;
+    box-shadow: -8px 0 8px rgba(0, 0, 0, 0.1);
+    
+    
+  }
+  
+  .hamburger-menu {
+      display: flex;
+      flex-direction:column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      gap: 3em;
+
+  }
+   .hamburger-menu li a:before{
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      height: 3px;
+      width: 0%;
+      background: black;
+      border-radius: 12px;
+      transition: all 0.4s ease;
+    }
+    .hamburger-menu li a:hover:before{
+      width: 100%;
+    }
+    .hamburger-menu li a{
+        font-size: 1.75em;
+    }
+    
+    .ham-link {
+      font-size: 3em;
+      color: black;
+      position: relative;
+      font-size: 25px;
+      font-weight: 500;
+      padding: 6px 0;
+      justify-content: space-between;
+      text-decoration: none;
+      font-weight: bold;
+      font-family: 'Poppins', sans-serif;
+      position: relative;
+    }
+    .ham-link:hover {
+      color: #01669c;
+  }
+  .side-menu{
+    margin-left:2em;
+  }
+  .svg{
+    color: white;
+  }
+  @media(max-width:1124px){
+    .nav-item{
+      display: none;
+    }
+    .secondary-btn{
+      display: none;
+    }
+    .side{
+      display: block;
+    }
+    .hamburger-menu li a{
+      font-size: 2em;
+    }
+    .hamburger{
+      width: 60%;
+    }
+    .header{
+      height: fit-content;
+    }
+  }
+  @media only screen and (min-width: 1125px) and (max-width: 1246px){
+    .nav-menu li a{
+      font-size: 2.065em;
+    }
+    
+    .secondary-btn{
+        width: 5%;
+    }
+    .nav-item{
+      width: 40%;
+    }
+    }
+  
+  .ham-item {
+      margin-left: 3rem;
+  }
+  .ham-item a{
+      font-size: 1.3rem;
+      color: #000;
+  }
+  .ham-item:hover .dropdown-content {
+      max-height: 500px;
+      min-width: 160px;
+      transition: max-height 0.25s ease-in;
+    }
+  
+    

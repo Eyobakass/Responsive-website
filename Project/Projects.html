@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Projects-rep</title>
+    <link rel="stylesheet" href="projects.css">
+    <link rel="stylesheet" href="../responsive.css">
+    <script src="../javascript/val-projectTable.js"></script>
+    <script>
+        function hamBurger(){
+        const hamburger = document.querySelector('.hamburger')
+        hamburger.style.display = 'flex'
+        }
+        function hideHam(){
+          const hideHam = document.querySelector('.hamburger')
+         hideHam.style.display = 'none'
+        }
+        </script>
+</head>
+<body>
+    <header class="header">
+        <nav class="hamburger">
+            <ul class="hamburger-menu">
+              <li onclick=hideHam() ><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                <li class="ham-item">
+                    <a href="../Home/Home.html" class="ham-link">Home</a>
+                </li>
+                <li class="ham-item">
+                    <a href="../About US/About Us.html" class="ham-link">About Us</a>
+                </li>
+                <li class="ham-item">
+                    <a href="../Events/events.html" class="ham-link">Events</a>
+                <li class="ham-item">
+                    <a href="../Project/Projects.html" class="ham-link">Projects</a>
+                </li>
+               
+                <li class="ham-item">
+                    <a href="../contact-us/contact.html" class="ham-link">Contact us</a>
+                </li>
+                 <li class="ham-item">
+                    <a href="../Training/training.html" class="ham-link">Trainings</a></li>
+                    <li class="ham-item">
+                        <a class="ham-link" href="../chat-room/Chat-room-login.html" for="btnControl">ChatRoom</a>
+                        <div class="dropdown-content">
+                            <a href="../chat-room/main-room.html">Project Pal</a>
+                            <a href="../chat-room/main-room.html">Training</a>
+                        </div>
+                      </li>
+                      <li class="ham-item">
+                        <a href="../Join Us/Join Us.html" class="ham-link">Join us</a>
+                    </li>
+            </ul>
+        </nav>
+        <nav class="navbar">
+            <img src="../image/logo2.png" alt="logo">
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="../Home/Home.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../About US/About Us.html" class="nav-link">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../Events/events.html" class="nav-link">Events</a>
+                <li class="nav-item">
+                    <a href="../Project/Projects.html" class="nav-link">Projects</a>
+                </li>
+               
+                <li class="nav-item">
+                    <a href="../contact-us/contact.html" class="nav-link">Contact us</a>
+                </li>
+                 <li class="nav-item">
+                    <a href="../Training/training.html" class="nav-link">Trainings</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../chat-room/Chat-room-login.html" for="btnControl">ChatRoom</a>
+                        <div class="dropdown-content">
+                            <a href="../chat-room/main-room.html">Project Pal</a>
+                            <a href="../chat-room/main-room.html">Training</a>
+                        </div>
+                      </li>
+                <li><a  href="../Join Us/Join Us.html"><button class="secondary-btn">Join Us</button></a></li>
+                <li onclick= hamBurger() class="side" ><a href=""><svg fill="white" stroke="white" xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="60px" fill="#5f6368"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+            </ul>
+        </nav>
+    </header>
+<!--Hero section-->
+    <section class="hero">
+            <div class="content">
+              <h1>Projects</h1>
+              <p>Ready to embark on coding adventures? This is our projects page and join the fun as we dive into the world of digital creation. Unleash your inner coder and let your imagination run wild!</p>
+            </div>
+        </section>
+        <!--submission-->
+       <div class="second-section">
+        <div class="about-sec">
+            <div class="about-sec-in">
+                <h2>Project Submission</h2>
+                <p>Submitting your project is quick and seamless. Simply create a repository for your project on GitHub and provide the link in the designated submission section. This allows our team to easily access and review your project, ensuring a smooth evaluation process. </p> <br>
+                     <form name="git" onsubmit="return validateForm()">
+                        <label class="linked" for="link">Submit Link</label> </br>
+                        <input type='text' id="link" name="repo" />
+                        <input type="submit" id="link-submit" class="submit-link" value="Submit">
+                      </form>
+                     <p>Explore the impressive range of past project submissions by fellow students in our club's public repository, offering insights and inspiration for your own projects.
+                     </p> 
+                      <p> <a href="//github.com/Byte-club/projects-submission">Check Out Past Projects!!</a></p>
+            </div>
+            <img src="../image/About-Us.jpg" alt="students">
+        </div>
+    </div>
+
+        <div class="text">
+            <div class="rec">
+            
+                <div class="text-boxed">
+                    <h1>Recent Submission</h1>
+                    <h1>Recent Submission</h1>
+                </div>
+            </div>
+            <p>Below, you will find a selection of recent project submissions by our talented students, along with their ratings.<br> To delve deeper into any project, simply click on the student's name to visit the corresponding GitHub repository.</p>
+        </div>
+     <div class="main-container">
+        <div class="second-container">
+            <img src="../image/react5.jpg" alt="alt">
+            <div class="card-content">
+                <h1><a href="#">Abel Teshome </a>    2.5/5</h1>
+                <p>Tetris Game</p>
+                <p>#Beginner #Typescript<br>#Node js #Express</p>
+                    
+            </div>
+        </div>
+        <div class="second-container">
+            <img src="../image/react5.jpg" alt="alt">
+            <div class="card-content">
+                <h1><a href="#">Abel Teshome </a>    3/5</h1>
+                <p>Compiler</p>
+                <p>#Advanced #LLVM<br>#TAC #ASTs</p>
+                   
+            </div>
+        </div>
+        <div class="second-container">
+            <img src="../image/react5.jpg" alt="alt">
+            <div class="card-content">
+                <h1><a href="#">Abel Teshome </a> 2.5/5</h1>
+                <p>Snake game</p>
+                <p>#Intermediate #C++</p>
+                   
+        </div>
+    </div>
+
+    <div class="text">
+        <div class="rec">
+        <div class="text-boxed">
+            <h1>Recommended Projects</h1>
+            <h1>Recommended Projects</h1>
+        </div>
+    </div>
+    <div class="inside">
+        <p>Welcome to the ultimate project section, where we bring you the most club-approved projects! We've got a treasure trove of recommendations straight from our awesome club members, who have rated these projects on a scale of one to five.</p> <p>From beginner to advanced, we've got you covered with the best of the best. So get ready to dive into a world of creativity, excitement, and learning as we unveil these top-rated projects. Trust the collective wisdom of our club members and get ready for an unforgettable journey of fun and discovery!</p></div>
+    </div>
+
+   
+        <div class="text">
+            <div class="rec">
+                <div class="text-boxed">
+                    <h1>Beginner Projects</h1>
+                    <h1>Beginner Projects</h1>
+                </div>
+            </div>
+            <p>Get ready to embark on an epic adventure with our beginner projects! These projects are like a warm and cozy blanket, gently introducing you to the wonderful world of club activities. We've got fun crafts, simple experiments, and exciting games that will make you feel like a pro in no time. It's all about learning, exploring, and having a blast along the way. So put on your imagination cap, grab your enthusiasm, and let's dive into these beginner projects together.</p>
+        </div>
+        </div>
+        
+         <div class="main-container">
+        <div class="second-container">
+            <img src="../image/react5.jpg" alt="alt">
+            <div class="card-content">
+                <h1><a href="#">Abel Teshome </a>    3/5</h1>
+                <p>Tic-Tac-Toe Game</p>
+                <p>#Beginner #Python</p>
+                    
+            </div>
+        </div>
+        <div class="second-container">
+            <img src="../image/react5.jpg" alt="alt">
+            <div class="card-content">
+                <h1><a href="#">Abel Teshome </a>    3/5</h1>
+                <p>Command-line utility</p>
+                <p>#Beginner #Typescript<br>#Node js #Express</p>
+                   
+            </div>
+        </div>
+        <div class="second-container">
+            <img src="../image/react5.jpg" alt="alt">
+            <div class="card-content">
+                <h1><a href="#">Abel Teshome </a>    3/5</h1>
+                <p>Chatbot</p>
+                <p>#Beginner #Python<br>#NLTK #Express</p>
+                   
+        </div>
+    </div>
+
+    <div class="second-container">
+        <img src="../image/react5.jpg" alt="alt">
+        <div class="card-content">
+            <h1><a href="#">Abel Teshome </a>    3/5</h1>
+            <p>Fitness Tracker</p>
+            <p>#Beginner #Python</p>
+                
+        </div>
+    </div>
+</div>
+    <div class="sub">
+        <div class="text">
+            <div class="rec">
+            
+                <div class="text-boxed">
+                    <h1>Intermediate Projects</h1>
+                    <h1>Intermediate Projects</h1>
+                </div>
+            </div>
+            <p>Get ready to take your skills to the next level with our intermediate projects! These projects are like the "just right" porridge of challenges - not too easy, not too hard, but juuuust perfect for your growing abilities. Get ready to dive into a world of exciting experiments, creative crafts, and mind-expanding activities.</p>
+        </div>
+    <div class="main-container">
+        <div class="second-container">
+            <img src="../image/react5.jpg" alt="alt">
+            <div class="card-content">
+                <h1><a href="#">Abel Teshome </a>    3/5</h1>
+                <p>Blogging Platform<br>
+                <p>#Intermediate #Django<br> </p>
+                    
+            </div>
+        </div>
+        <div class="second-container">
+            <img src="../image/react5.jpg" alt="alt">
+            <div class="card-content">
+                <h1><a href="#">Abel Teshome </a>    3/5</h1>
+                <p>E-commerce store </p>
+                <p>#Intermediate #React<br>#Node js #Express</p>
+                   
+            </div>
+        </div>
+        <div class="second-container">
+            <img src="../image/react5.jpg" alt="alt">
+            <div class="card-content">
+                <h1><a href="#">Abel Teshome </a>    3/5</h1>
+                <p>Weather Forecast App </p>
+                <p>#Intermediate #Angular #OpenWeatherMap</p>
+                   
+            </div>
+        </div>
+        <div class="second-container">
+        <img src="../image/react5.jpg" alt="alt">
+        <div class="card-content">
+            <h1><a href="#">Abel Teshome </a>    3/5</h1>
+            <p>Inventory Management System </p>
+            <p>#Intermediate #Java</p>               
+        </div>
+    </div>
+    </div>
+    
+</div>
+
+    <div class="text">
+        <div class="rec">
+            <div class="text-boxed">
+                <h1>Advanced Projects</h1>
+                <h1>Advanced Projects</h1>
+            </div>
+        </div>
+        <p>Get ready to level up your skills with our advanced projects! These projects are not for the faint of heart - they'll challenge you, push you, and take you to new heights of awesomeness! </p>
+    </div>
+
+    <div class="main-container">
+    <div class="second-container">
+        <img src="../image/react5.jpg" alt="alt">
+        <div class="card-content">
+            <h1><a href="#">Abel Teshome </a>    3/5</h1>
+            <p>Social Media Platform </p>
+            <p>#Advanced #Ruby on Rails<br> #SQLite</p>     
+        </div>
+    </div>
+
+    <div class="second-container">
+        <img src="../image/react5.jpg" alt="alt">
+        <div class="card-content">
+            <h1><a href="#">Abel Teshome </a>    3/5</h1>
+            <p>Image Recognition with Deep Learning</p>
+            <p>#Advanced #Python #Tensorflow</p>
+               
+         </div>
+    </div>
+    <div class="second-container">
+        <img src="../image/react5.jpg" alt="alt">
+        <div class="card-content">
+            <h1><a href="#">Abel Teshome </a>    3/5</h1>
+            <p>Autonomous Robot Navigation</p>
+            <p>#Advanced #Python<br>#OpenCV #ROS</p>        
+        </div>
+    </div>
+  <div class="second-container">
+      <img src="../image/react5.jpg" alt="alt">
+      <div class="card-content">
+        <h1><a href="#">Abel Teshome </a>    3/5</h1>
+        <p>Computer Vision and Image Processing</p>
+        <p>#Advanced #Python<br>#OCR #TensorFlow</p>               
+      </div>
+    </div>
+
+
+    <div class="text">
+    <div class="rec">
+            
+        <div class="text-boxed">
+            <h1>Project Rating</h1>
+            <h1>Project Rating</h1>
+        </div>
+    </div>
+        <p>Calling all coding enthusiasts ! This is the place to cast your vote on a poll of coding projects that are submitted by club members. By participating in this poll, you can help us make better recommendation for other member and recognize the hard work and brilliance of club members. Your vote will not only influence which projects receive recognition but also inspire others and foster a sense of community within the club.</p>
+    </div>
+
+    <!--table starts-->
+    <table>
+
+        <tr>
+        <th>#</th>
+        <th>Project</th>
+        <th>Level </th>
+        <th>Rating</th>
+        
+        </tr>
+    
+         <tr>
+        <td>1</td>
+        <td>Twitter Bot</td>
+        <td><form name="levels-Tb" method="get"  onsubmit="return valTbl();" >
+                <fieldset class="Twitter-bot-level">
+                    <legend>Rate-Me</legend>
+                   <label for="Beginner-Tb">Beginner</label><input type="radio" id="Beginner-Tb" name="level" value="beginner-1"> <br> 
+                    <label for="Intermediate-Tb">Intermediate</label><input type="radio" id="Intermediate-Tb" name="level" value="Intermediate-1"> <br> 
+                   <label for="Advanced-Tb">Advanced</label> <input type="radio" id="Advanced-Tb" name="level" value="advanced-3"> <br>
+                    <input class="table-sub1" type="submit" id="level-Tb"  value="Submit">
+                    </fieldset>
+        </form></td>
+    
+        <td><form name="ratings-Tb" onsubmit="return valTbr();"> 
+            <fieldset class="Twitter-bot-rating">
+                <legend>Rate-Me</legend>
+                   <label for="1-Tb">1</label><input type="radio" id="1-Tb" name="rating" value="1"> <br>
+                   <label for="2-Tb">2</label><input type="radio" id="2-Tb" name="rating" value="2"> <br> 
+                   <label for="3-Tb">3</label><input type="radio" id="3-Tb" name="rating" value="3"> <br>
+                    <label for="4-Tb">4</label><input type="radio"id="4-Tb" name="rating" value="4"> <br>
+                    <label for="5-Tb">5</label><input type="radio" id="5-Tb" name="rating" value="5">  <br>
+                   <input class="table-sub2" type="submit" id="rating-Tb" class="submit-table" value="Submit">
+                </fieldset> </form></td>
+        </tr>
+       
+        <tr>
+        <td>2</td>
+        <td>Web Scraper</td>
+        <td><form name="levels-Ws"  onsubmit="return valWsl();"> 
+             <fieldset class="Web-scraper-level">
+            <legend>Rate-Me</legend>
+           <label for="Beginner-Ws">Beginner</label><input type="radio" id="Beginner-Ws" name="level" value="beginner-1"> <br> 
+            <label for="Intermediate-Ws">Intermediate</label><input type="radio" id="Intermediate-Ws" name="level" value="Intermediate-1"> <br> 
+           <label for="Advanced-Ws">Advanced</label> <input type="radio" id="Advanced-Ws" name="level" value="advanced-3"> <br>
+            <input class="table-sub1" type="submit"  class="submit-table" value="Submit">
+            </fieldset> 
+          </form>
+         </td>
+    
+        <td><form name="ratings-Ws" onsubmit="return valWsr();">
+            <fieldset class="Web-scraper-rating" >
+            <legend>Rate-Me</legend>
+               <label for="1-Ws">1</label><input type="radio" id="1-Ws" name="rating" value="1"> <br>
+               <label for="2-Ws">2</label><input type="radio" id="2-Ws" name="rating" value="2"> <br> 
+               <label for="3-Ws">3</label><input type="radio" id="3-Ws" name="rating" value="3"> <br>
+                <label for="4-Ws">4</label><input type="radio"id="4-Ws" name="rating" value="4"> <br>
+                <label for="5-Ws">5</label><input type="radio" id="5-Ws" name="rating" value="5">  <br>
+               <input class="table-sub2" type="submit"  class="submit-table" value="Submit">
+            </fieldset>
+            </form>
+            </td>
+        
+        </tr>
+       
+        <tr>
+        <td>3</td>
+        <td>Facebook Clone</td>
+        <td><form name="levels-Fc"  onsubmit="return valFcl();">
+         <fieldset class="Facebook-level">
+            <legend>Rate-Me</legend>
+            <label for="Beginner-Fb">Beginner</label><input type="radio" id="Beginner-Fb" name="level" value="beginner-1"> <br> 
+            <label for="Intermediate-Fb" >Intermediate</label><input type="radio" id="Intermediate-Fb" name="level" value="Intermediate-1"> <br> 
+            <label for="Advanced-Fb">Advanced</label> <input type="radio" id="Advanced-Fb" name="level" value="advanced-3"> <br>
+            <input class="table-sub1" type="submit" id="level-Fb" class="submit-table" value="Submit">
+            </fieldset>
+         </form></td>
+    
+        <td><form name="ratings-Fc"  onsubmit="return valFcr();">
+            <fieldset class="Facebook-rating">
+            <legend>Rate-Me</legend>
+               <label for="1-Fb">1</label><input type="radio" id="1-Fb" name="rating" value="1"> <br>
+               <label for="2-Fb">2</label><input type="radio" id="2-Fb" name="rating" value="2"> <br> 
+               <label for="3-Fb" >3</label><input type="radio" id="3-Fb" name="rating" value="3"> <br>
+                <label for="4-Fb">4</label><input type="radio"id="4-Fb" name="rating" value="4"> <br>
+                <label for="5-Fb">5</label><input type="radio" id="5-Fb" name="rating" value="5">  <br>
+               <input class="table-sub2" type="submit" id="rating-Fb" class="submit-table" value="Submit">
+            </fieldset>
+        </td>
+        
+        </tr>
+       
+        <tr>
+        <td>4</td>
+        <td>Mp3 Player</td>
+        <td><form name="levels-Mp"  onsubmit="return valMpl();"> 
+            <fieldset class="Mp3-level">
+            <legend>Rate-Me</legend>
+           <label for="Beginner-Mp">Beginner</label><input type="radio" id="Beginner-Mp" name="level" value="beginner-1"> <br> 
+            <label for="Intermediate-Mp">Intermediate</label><input type="radio" id="Intermediate-Mp" name="level" value="Intermediate-1"> <br> 
+           <label for="Advanced-Mp">Advanced</label> <input type="radio" id="Advanced-Mp" name="level" value="advanced-3"> <br>
+            <input class="table-sub1" type="submit" id="level-Mp" class="submit-table" value="Submit">
+            </fieldset>
+        </form></td>
+    
+        <td><form name="ratings-Mp"  onsubmit="return valMpr();">
+            <fieldset class="Mp3-rating">
+            <legend>Rate-Me</legend>
+               <label for="1-Mp" >1</label><input type="radio" id="1-Mp" name="rating" value="1"> <br>
+               <label for="2-Mp">2</label><input type="radio" id="2-Mp" name="rating" value="2"> <br> 
+               <label for="3-Mp">3</label><input type="radio" id="3-Mp" name="rating" value="3"> <br>
+                <label for="4-Mp">4</label><input type="radio"id="4-Mp" name="rating" value="4"> <br>
+                <label for="5-Mp">5</label><input type="radio" id="5-Mp" name="rating" value="5">  <br>
+               <input class="table-sub2" type="submit" id="rating-Mp" class="submit-table" value="Submit">
+            </fieldset>
+         </form></td>
+        </tr>
+       
+        <tr>
+        <td>5</td>
+        <td>Chat Application</td>
+        <td><form name="levels-Ca"  onsubmit="return valCal();"> 
+            <fieldset class="Chat-level">
+            <legend>Rate-Me</legend>
+           <label for="Beginner-Ch">Beginner</label><input type="radio" id="Beginner-Ch" name="level" value="beginner-1"> <br> 
+            <label for="Intermediate-Ch">Intermediate</label><input type="radio" id="Intermediate-Ch" name="level" value="Intermediate-1"> <br> 
+           <label for="Advanced-Ch">Advanced</label> <input type="radio" id="Advanced-Ch" name="level" value="advanced-3"> <br>
+            <input class="table-sub1" type="submit" id="level-Ch" class="submit-table" value="Submit">
+            </fieldset>
+        </form></td>
+    
+        <td><form name="ratings-Ca"  onsubmit="return valCar();">
+            <fieldset class="Chat-rating">
+            <legend>Rate-Me</legend>
+               <label for="1-Ch">1</label><input type="radio" id="1-Ch" name="rating" value="1"> <br>
+               <label for="2-Ch" >2</label><input type="radio" id="2-Ch" name="rating" value="2"> <br> 
+               <label for="3-Ch">3</label><input type="radio" id="3-Ch" name="rating" value="3"> <br>
+                <label for="4-Ch">4</label><input type="radio"id="4-Ch" name="rating" value="4"> <br>
+                <label for="5-Ch" >5</label><input type="radio" id="5-Ch" name="rating" value="5">  <br>
+               <input class="table-sub2" type="submit" id="rating-Ch" class="submit-table" value="Submit">
+            </fieldset>
+         </form></td>
+       
+        </tr>
+       
+        <tr>
+        <td>6</td>
+        <td>Tetris Game</td>
+        <td><form name="levels-Tg"  onsubmit="return valTgl();"> 
+            <fieldset class="Tetris-level">
+            <legend>Rate-Me</legend>
+           <label for="Beginner-Tg">Beginner</label><input type="radio" id="Beginner-Tg" name="level" value="beginner-1"> <br> 
+            <label for="Intermediate-Tg">Intermediate</label><input type="radio" id="Intermediate-Tg" name="level" value="Intermediate-1"> <br> 
+           <label for="Advanced-Tg">Advanced</label> <input type="radio" id="Advanced-Tg" name="level" value="advanced-3"> <br>
+            <input class="table-sub1" type="submit" id="level-Tg" class="submit-table" value="Submit">
+            </fieldset>
+        </form></td>
+            
+        <td><form name="ratings-Tg"  onsubmit="return valTgr();">
+            <fieldset class="Tetris-rating">
+            <legend>Rate-Me</legend>
+               <label for="1-Tg">1</label><input type="radio" id="1-Tg" name="rating" value="1"> <br>
+               <label for="2-Tg">2</label><input type="radio" id="2-Tg" name="rating" value="2"> <br> 
+               <label for="3-Tg">3</label><input type="radio" id="3-Tg" name="rating" value="3"> <br>
+                <label for="4-Tg">4</label><input type="radio"id="4-Tg" name="rating" value="4"> <br>
+                <label for="5-Tg" >5</label><input type="radio" id="5-Tg" name="rating" value="5">  <br>
+               <input class="table-sub2" type="submit" id="rating-Tg" class="submit-table" value="Submit">
+            </fieldset>
+        </form></td>
+      
+        </tr>
+       
+        <tr>
+        <td>7</td>
+        <td>Wheather App</td>
+        <td><form name="levels-Wha"  onsubmit="return valWhl();">
+             <fieldset class="Wheather-level">
+            <legend>Rate-Me</legend>
+           <label for="Beginner-Wh">Beginner</label><input type="radio" id="Beginner-Wh" name="level" value="beginner-1"> <br> 
+            <label for="Intermediate-Wh" >Intermediate</label><input type="radio" id="Intermediate-Wh" name="level" value="Intermediate-1"> <br> 
+           <label for="Advanced-Wh">Advanced</label> <input type="radio" id="Advanced-Wh" name="level" value="advanced-3"> <br>
+            <input class="table-sub1" type="submit" id="level-Wh" class="submit-table" value="Submit">
+            </fieldset>
+        </form></td>
+        
+        <td><form name="ratings-Wha"  onsubmit="return valWhr();">
+            <fieldset class="Wheather-rating">
+            <legend>Rate-Me</legend>
+               <label for="1-Wh">1</label><input type="radio" id="1-Wh" name="rating" value="1"> <br>
+               <label for="2-Wh">2</label><input type="radio" id="2-Wh" name="rating" value="2"> <br> 
+               <label for="3-Wh">3</label><input type="radio"  id="3-Wh" name="rating" value="3"> <br>
+                <label for="4-Wh">4</label><input type="radio" id="4-Wh" name="rating" value="4"> <br>
+                <label for="5-Wh">5</label><input type="radio" id="5-Wh" name="rating" value="5">  <br>
+               <input class="table-sub2" type="submit" id="rating-Wh" class="submit-table" value="Submit">
+            </fieldset>
+        </form></td>
+        
+        </tr>
+    </table>
+ 
+<footer class="footer-last">
+    <div class="footer-left">
+      <h3>Byte<span>Minds</span></h3>
+      <img src="../image/Byte Minds.png" alt="logo">
+
+      <p class="footer-links">
+        <a href="../Home/Home.html" class="link-1">Home</a>
+        
+        <a href="../About US/About Us.html">About Us</a>
+      
+        <br>
+      
+        <a href="../contact-us/contact.html">Contact Us</a>
+        
+        <a href="../">Events</a>
+        
+      </p>
+
+      <p class="footer-club-name">Byte-Minds <div>&#169</div> 2024</p>
+      <hr class="line">
+    </div>
+
+    <div class="footer-center">
+
+      <div>
+        
+        <p>Contact Us</p>
+      </div>
+<br>
+      <div>
+        
+        <p>+251905050505</p>
+      </div>
+<br>
+      <div>
+       
+        <p><a href="Byte-minds@gmail.com">Byte-minds@gmail.com</a></p>
+      </div>
+    </div>
+
+  </footer>
+    
+</body>
+</html>
