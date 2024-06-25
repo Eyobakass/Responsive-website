@@ -1,12 +1,16 @@
 import { Module } from '@nestjs/common';
-import { MongooseModule } from '@nestjs/mongoose';
 import { InstructorController } from './instructor.controller';
-import { InstructorSchema } from 'src/schema/instructor.schema';
-import { DatabaseModule } from 'src/database/database.module';
 import { InstructorService } from './instructor.service';
+import { MongooseModule } from '@nestjs/mongoose';
+import { InstructorSchema } from './instructor.schema';
+import { InstructorDTO } from './instructor.dto';
+
 @Module({
-  imports:[DatabaseModule, MongooseModule.forFeature([{name:'instructor',schema:InstructorSchema}])],
+  imports: [
+    MongooseModule.forFeature([{ name: 'Instructor', schema: InstructorSchema }]),
+  ],
   controllers: [InstructorController],
   providers: [InstructorService],
+  exports: [InstructorService],
 })
 export class InstructorModule {}
